@@ -2,7 +2,7 @@
 	pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <!-- 슬라이더 메인 -->
-<div class="section" id="search">
+<div class="section">
 <section class="mbr-slider mbr-section mbr-section--no-padding carousel slide" data-ride="carousel" data-wrap="true" data-interval="5000" id="slider-63" style="background-color: rgb(255, 255, 255);">
     <div class="mbr-section__container">
         <div>
@@ -67,6 +67,11 @@
                 </div>
             </div>
             
+        </div>
+                <div class="mbr-arrow mbr-arrow--floating text-center">
+            <div class="mbr-section__container container">
+                <a class="mbr-arrow__link" href="#search" class="scroll"><i class="glyphicon glyphicon-menu-down"></i></a>
+            </div>
         </div>
     </div>
 </section>
