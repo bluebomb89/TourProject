@@ -76,6 +76,10 @@
 <!-- 메인 인클루드 -->
 <jsp:include page="${mainview}"></jsp:include>
 </div>
+<div>
+<!-- 검색창 인클루드 -->
+<jsp:include page="${searchview}"></jsp:include>
+</div>
 <div class="section">
 <!-- 카테고리 인클루드 -->
 <jsp:include page="${categori}"></jsp:include>
