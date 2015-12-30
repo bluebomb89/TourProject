@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<section class="mbr-gallery mbr-section mbr-section--no-padding" id="gallery1-3" style="background-color: rgb(255, 255, 255);">
+<section class="mbr-gallery mbr-section mbr-section--no-padding" id="gallery1-3" style="background-color: #edefed;">
     <!-- Gallery -->
     <div class=" mbr-gallery-layout-default">
         <div>

@@ -12,7 +12,7 @@ $(function(){
 });
 </script>
 <!-- 슬라이더 메인 -->
-<div class="section">
+<div class="section" id="search">
 <section class="mbr-slider mbr-section mbr-section--no-padding carousel slide" data-ride="carousel" data-wrap="true" data-interval="5000" id="slider-64" style="background-color: rgb(255, 255, 255);">
 	<div class="searchArea">
 		<div id="searchTxtArea" class="searchTxtArea"></div>
@@ -37,7 +37,7 @@ $(function(){
 	
     <div class="mbr-section__container">
         <div>
-            <ol class="carousel-indicators">
+            <ol class="carousel-indicators" style="">
                 <li data-app-prevent-settings="" data-target="#slider-64" class="active" data-slide-to="0"></li><li data-app-prevent-settings="" data-target="#slider-64" data-slide-to="1"></li><li data-app-prevent-settings="" data-target="#slider-64" data-slide-to="2"></li><li data-app-prevent-settings="" data-target="#slider-64" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
