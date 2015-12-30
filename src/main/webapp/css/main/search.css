@@ -9,7 +9,7 @@
 .searchArea .searchTxtArea {
     height: 80px;
     text-align: center;
-    color: rgb(255, 106, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-family: NanumGB;
     font-size: 4.6em;
@@ -22,24 +22,34 @@
     top: 30px;
     display: block;
     height: 53px;
-    border: 6px solid rgb(255, 106, 0);
+    border: 2px solid rgb(255, 255, 255);
     background: url(/etc/designs/koreanair-travel/images/main/block55.png) repeat 0 0;
+    border-radius: 15px;
 }
 .searchArea input[type="text"] {
-    top: -2px;
+    /* top: -2px; */
     position: absolute;
     float: left;
     width: 550px;
     padding: 0 20px;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0);
     border: none;
-    line-height: 46px;
+    line-height: 46input::-webkit-input-placeholder {
+color: red !important;
+}px;
     height: 46px;
     color: rgb(255, 255, 255);
-    font-size: 1.2em;
+    font-size: 2.5em;
 }
 .searchArea .searchBtn {
     float: left;
     position: absolute;
     left: 494px;
+}
+#searchText:FOCUS{
+	color: white;
+	border: none;
+}
+input::-webkit-input-placeholder {
+color: white !important;
 }
