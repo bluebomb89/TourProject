@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html> 
 <script type="text/javascript">
 var sch;
@@ -11,26 +11,26 @@ $(function(){
         });
 });
 </script>
-<!-- ½½¶óÀÌ´õ ¸ÞÀÎ -->
+<!-- ìŠ¬ë¼ì´ë” ë©”ì¸ -->
 <div class="section" id="search">
 <section class="mbr-slider mbr-section mbr-section--no-padding carousel slide" data-ride="carousel" data-wrap="true" data-interval="5000" id="slider-64" style="background-color: rgb(255, 255, 255);">
 	<div class="searchArea">
 		<div id="searchTxtArea" class="searchTxtArea"></div>
 		<fieldset>
-			<input type="text" placeholder="¿©ÇàÁö¸¦ ÀÔ·ÂÇÏ¼¼¿ä" id="searchText" title="°Ë»ö¾î" class="placeholder">
-			<a href="#" class="searchBtn"><img src="../backgroundimg/main/btn_search.png" alt="°Ë»ö"></a>
+			<input type="text" placeholder="ì—¬í–‰ì§€ë¥¼ ìž…ë ¥í•˜ì„¸ìš”" id="searchText" title="ê²€ìƒ‰ì–´" class="placeholder">
+			<a href="#" class="searchBtn"><img src="../backgroundimg/main/btn_search.png" alt="ê²€ìƒ‰"></a>
 		</fieldset>
 		<!-- <ul class="favorSList">
 		
-				<li><a href="#none" onclick="$KE.search('½Ãµå´Ï'); return false;">½Ãµå´Ï</a></li>
+				<li><a href="#none" onclick="$KE.search('ì‹œë“œë‹ˆ'); return false;">ì‹œë“œë‹ˆ</a></li>
 				
-				<li><a href="#none" onclick="$KE.search('¿ÀÅ¬·£µå'); return false;">¿ÀÅ¬·£µå</a></li>
+				<li><a href="#none" onclick="$KE.search('ì˜¤í´ëžœë“œ'); return false;">ì˜¤í´ëžœë“œ</a></li>
 				
-				<li><a href="#none" onclick="$KE.search('¹æÄÛ'); return false;">¹æÄÛ</a></li>
+				<li><a href="#none" onclick="$KE.search('ë°©ì½•'); return false;">ë°©ì½•</a></li>
 				
-				<li><a href="#none" onclick="$KE.search('±¡'); return false;">±¡</a></li>
+				<li><a href="#none" onclick="$KE.search('ê´Œ'); return false;">ê´Œ</a></li>
 				
-				<li><a href="#none" onclick="$KE.search('·¯½Ã¾Æ'); return false;">·¯½Ã¾Æ</a></li>
+				<li><a href="#none" onclick="$KE.search('ëŸ¬ì‹œì•„'); return false;">ëŸ¬ì‹œì•„</a></li>
 				
 		</ul> -->
 	</div>
