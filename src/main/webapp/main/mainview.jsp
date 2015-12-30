@@ -21,17 +21,12 @@
 				</ol>
 				<div class="carousel-inner" role="listbox">
 					<div class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--bg-adapted item dark center mbr-section--full-height active"
-						style="background-image: url(images/iphone.jpg);">
+						style="background-image: url(images/iphone.jpg);font-family: 'Nanum Pen Script', serif; font-size: 20pt;">
 						<div class="mbr-box__magnet mbr-box__magnet--sm-padding">
-						just go 
-						<p>
-						함나풍
-						<p>
-						여행특공대
-						<p>
-						여행의 신
-						<p>
-						그냥 가요
+							<div id="canvas">
+								<div id="trigger">함.나.풍</div>
+								<div id="trigger">함께 나누는 풍경</div>
+							</div>
 							<div class=" container"></div>
 						</div>
 					</div>
