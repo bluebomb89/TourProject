@@ -19,7 +19,7 @@
         </div>
         <div class="mbr-arrow mbr-arrow--floating text-center">
             <div class="mbr-section__container container">
-                <a class="mbr-arrow__link" href="#next"><i class="glyphicon glyphicon-menu-down"></i></a>
+                <a class="mbr-arrow__link" href="#search" class="scroll"><i class="glyphicon glyphicon-menu-down"></i></a>
             </div>
         </div>
     </div>

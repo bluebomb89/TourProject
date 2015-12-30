@@ -20,6 +20,14 @@
   <link rel="stylesheet" href="../css/main/gstyle.css">
   <link rel="stylesheet" href="../css/main/mbr-additional.css" type="text/css">
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript">
+	  jQuery(document).ready(function($) {
+	      $(".scroll").click(function(event){            
+	              event.preventDefault();
+	              $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+	      });
+	  });
+  </script>
 </head>
 
 <body>
@@ -76,7 +84,7 @@
 <!-- 메인 인클루드 -->
 <jsp:include page="${mainview}"></jsp:include>
 </div>
-<div>
+<div class="section">
 <!-- 검색창 인클루드 -->
 <jsp:include page="${searchview}"></jsp:include>
 </div>
