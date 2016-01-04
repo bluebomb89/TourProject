@@ -15,6 +15,7 @@ console.log(error);
 function createKakaotalkLogin(){
 $("#kakao-logged-group .kakao-logout-btn,#kakao-logged-group .kakao-login-btn").remove();
 var loginBtn = $("<img/>",{"class":"kakao-login-btn","src":"images/kakao_login_btn.png"});
+var mainlogin = $("<a/>",{"class":"kakao-logout-btn","text":"로그인"});
 loginBtn.click(function(){
 Kakao.Auth.login({
 persistAccessToken: true,
@@ -29,6 +30,7 @@ console.log(err);
 });
 });
 $("#kakao-logged-group").prepend(loginBtn)
+$("#kakao-logged-group").prepend(mainlogin)
 }
 function createKakaotalkLogout(){
 $("#kakao-logged-group .kakao-logout-btn,#kakao-logged-group .kakao-login-btn").remove();

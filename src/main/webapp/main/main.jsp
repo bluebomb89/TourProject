@@ -69,7 +69,7 @@
                         		<li class="mbr-navbar__item">
                         			<a class="mbr-buttons__link btn text-white"  href="main.do">HOME</a>
                         		</li><li class="mbr-navbar__item">
-                        			<a class="mbr-buttons__link btn text-white" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">로그인</a>
+                        			<!-- <a class="mbr-buttons__link btn text-white" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">로그인</a> -->
                         		</li>
                         		<li class="mbr-navbar__item">
                         			<a class="mbr-buttons__link btn text-white" href="http://mobirise.com">ABOUT</a>
@@ -114,7 +114,7 @@
         			<a href="#">페이스북</a>
         		</div>
         		<div class="col-sm-4" id="hnplogin"></div>
-        		 <div id="kakao-logged-group" style="cursor:pointer"></div>
+        		 <!-- <div id="kakao-logged-group" style="cursor:pointer"></div> -->
         	</div>
         	
         </div>
