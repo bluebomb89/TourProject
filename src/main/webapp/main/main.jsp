@@ -59,7 +59,7 @@
             <img id="image"/>
             <div id="name"></div>
         </div>
-<!-- <div id="kakao-logged-group"></div> -->
+<!-- <div id="kakao-logged-group"></div> --> 
 <div id="kakao-profile"></div>
                 <div class="mbr-navbar__hamburger mbr-hamburger text-white"><span class="mbr-hamburger__line"></span></div>
                 <div class="mbr-navbar__column mbr-navbar__menu">
