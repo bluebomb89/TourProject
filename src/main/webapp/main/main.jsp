@@ -113,6 +113,7 @@
         	<fb:login-button show-faces="false" width="200" max-rows="1"></fb:login-button>
         </div>
         <div id="hnplogin"></div>
+        <a class="kakao-login-btn">카카오 톡으로 로그인하기</a>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
