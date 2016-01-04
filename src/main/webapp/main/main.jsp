@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="../css/main/search.css" type="text/css">  
   <link rel="stylesheet" href="../css/main/gstyle.css">
   <link rel="stylesheet" href="../css/main/mbr-additional.css" type="text/css">
+  <link rel="stylesheet" href="../css/main/text.css" type="text/css">
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script type="text/javascript">
 	  jQuery(document).ready(function($) {
