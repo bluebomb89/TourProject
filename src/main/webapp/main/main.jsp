@@ -68,7 +68,7 @@
                         	<ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active">
                         		<li class="mbr-navbar__item">
                         			<a class="mbr-buttons__link btn text-white"  href="main.do">HOME</a>
-                        		</li><li class="mbr-navbar__item">
+                        		</li><li class="mbr-navbar__item" id="kakao-logged-group">
                         			<!-- <a class="mbr-buttons__link btn text-white" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">로그인</a> -->
                         		</li>
                         		<li class="mbr-navbar__item">

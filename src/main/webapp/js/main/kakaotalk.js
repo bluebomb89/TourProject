@@ -15,7 +15,7 @@ console.log(error);
 function createKakaotalkLogin(){
 $("#kakao-logged-group .kakao-logout-btn,#kakao-logged-group .kakao-login-btn").remove();
 var loginBtn = $("<img/>",{"class":"kakao-login-btn","src":"images/kakao_login_btn.png"});
-var mainlogin = $("<a/>",{"class":"kakao-logout-btn","text":"로그인"});
+var mainlogin = $("<a/>",{"class":"kakao-logout-btn mbr-buttons__link btn text-white","text":"로그인","data-toggle":"modal","data-target":".bs-example-modal-lg"});
 loginBtn.click(function(){
 Kakao.Auth.login({
 persistAccessToken: true,
@@ -29,12 +29,12 @@ console.log(err);
 }
 });
 });
-$("#kakao-logged-group").prepend(loginBtn)
+$("#hnplogin").prepend(loginBtn)
 $("#kakao-logged-group").prepend(mainlogin)
 }
 function createKakaotalkLogout(){
 $("#kakao-logged-group .kakao-logout-btn,#kakao-logged-group .kakao-login-btn").remove();
-var logoutBtn = $("<a/>",{"class":"kakao-logout-btn","text":"로그아웃"});
+var logoutBtn = $("<a/>",{"class":"kakao-logout-btn mbr-buttons__link btn text-white","text":"로그아웃"});
 logoutBtn.click(function(){
 Kakao.Auth.logout();
 createKakaotalkLogin();
