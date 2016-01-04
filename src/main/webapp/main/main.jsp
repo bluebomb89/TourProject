@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
 <html>
 <head>
   <!-- Site made with Mobirise Website Builder v2.4.1, http://mobirise.com -->
@@ -29,10 +30,10 @@
 	      });
 	  });
   </script>
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 
 <body>
-
 <section class="engine"><a rel="nofollow" href="http://mobirise.com">Mobirise website maker</a></section>
 <!-- 메뉴바 -->
 <section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--transparent mbr-navbar--sticky mbr-navbar--auto-collapse" id="menu-21">
@@ -46,6 +47,115 @@
                         <span class="mbr-brand__name"><a class="mbr-brand__name text-white" href="main.do">그냥가요</a></span>
                     </span>
                 </div>
+               
+
+    <script>
+$(document).ready(function(){
+Kakao.init('095fc61e29157624f94212b30372c244');
+function getKakaotalkUserProfile(){
+Kakao.API.request({
+url: '/v1/user/me',
+success: function(res) {
+$("#kakao-profile").append(res.properties.nickname);
+$("#kakao-profile").append($("<img/>",{"src":res.properties.profile_image,"alt":res.properties.nickname+"님의 프로필 사진"}));
+},
+fail: function(error) {
+console.log(error);
+}
+});
+}
+function createKakaotalkLogin(){
+$("#kakao-logged-group .kakao-logout-btn,#kakao-logged-group .kakao-login-btn").remove();
+var loginBtn = $("<a/>",{"class":"kakao-login-btn","text":"카카오 톡으로 로그인하기"});
+loginBtn.click(function(){
+Kakao.Auth.login({
+persistAccessToken: true,
+persistRefreshToken: true,
+success: function(authObj) {
+getKakaotalkUserProfile();
+createKakaotalkLogout();
+},
+fail: function(err) {
+console.log(err);
+}
+});
+});
+$("#kakao-logged-group").prepend(loginBtn)
+}
+function createKakaotalkLogout(){
+$("#kakao-logged-group .kakao-logout-btn,#kakao-logged-group .kakao-login-btn").remove();
+var logoutBtn = $("<a/>",{"class":"kakao-logout-btn","text":"로그아웃"});
+logoutBtn.click(function(){
+Kakao.Auth.logout();
+createKakaotalkLogin();
+$("#kakao-profile").text("");
+});
+$("#kakao-logged-group").prepend(logoutBtn);
+}
+if(Kakao.Auth.getRefreshToken()!=undefined&&Kakao.Auth.getRefreshToken().replace(/ /gi,"")!=""){
+createKakaotalkLogout();
+getKakaotalkUserProfile();
+}else{
+createKakaotalkLogin();
+}
+});
+</script>
+<div id="fb-root"></div>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '156610684706543', // 앱 ID
+              status     : true,          // 로그인 상태를 확인
+              cookie     : true,          // 쿠키허용
+              xfbml      : true           // parse XFBML
+            });
+           
+            FB.getLoginStatus(function(response) {
+                if (response.status === 'connected') {
+                    
+                    FB.api('/me', function(user) {
+                        if (user) {
+                            var image = document.getElementById('image');
+                            image.src = 'http://graph.facebook.com/' + user.id + '/picture';
+                            var name = document.getElementById('name');
+                            name.innerHTML = user.name
+                            var id = document.getElementById('id');
+                            id.innerHTML = user.id
+                        }
+                    });    
+                     
+                } else if (response.status === 'not_authorized') {
+
+                } else {
+                    
+                }
+            });
+
+            FB.Event.subscribe('auth.login', function(response) {
+                document.location.reload();
+            });
+          };
+        
+          // Load the SDK Asynchronously
+          (function(d){
+             var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement('script'); js.id = id; js.async = true;
+             js.src = "//connect.facebook.net/ko_KR/all.js";
+             ref.parentNode.insertBefore(js, ref);
+           }(document));
+        </script>
+        
+        <p>로그인 버튼 추가</p>
+        <fb:login-button show-faces="false" width="200" max-rows="1"></fb:login-button>
+        
+        <p>사용자정보 출력</p>
+        <div align="left">
+            <img id="image"/>
+            <div id="name"></div>
+        </div>
+<div id="kakao-logged-group"></div>
+<div id="kakao-profile"></div>
                 <div class="mbr-navbar__hamburger mbr-hamburger text-white"><span class="mbr-hamburger__line"></span></div>
                 <div class="mbr-navbar__column mbr-navbar__menu">
                     <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
