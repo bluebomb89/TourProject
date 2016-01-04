@@ -15,7 +15,7 @@ $(function(){
 <div class="section" id="search">
 <section class="mbr-slider mbr-section mbr-section--no-padding carousel slide" data-ride="carousel" data-wrap="true" data-interval="5000" id="slider-64" style="background-color: rgb(255, 255, 255);">
 	<div class="searchArea">
-		<div id="searchTxtArea" class="searchTxtArea"></div>
+		<div id="searchTxtArea" class="searchTxtArea">여행지를 입력하세요</div>
 		<fieldset>
 			<input type="text" placeholder="여행지를 입력하세요" id="searchText" title="검색어" class="placeholder">
 			<a href="#" class="searchBtn"><img src="../backgroundimg/main/btn_search.png" alt="검색"></a>
