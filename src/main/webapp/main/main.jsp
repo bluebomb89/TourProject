@@ -30,7 +30,6 @@
 	      });
 	  });
   </script>
-  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 
 <body>
@@ -49,8 +48,9 @@
                 </div>
                
 
+   
 <div id="fb-root"></div>
-        
+
         
         <fb:login-button show-faces="false" width="200" max-rows="1"></fb:login-button>
         <a href="#" onclick="FB.logout();">[logout]</a><br>
@@ -58,7 +58,7 @@
             <img id="image"/>
             <div id="name"></div>
         </div>
-<div id="kakao-logged-group"></div>
+<!-- <div id="kakao-logged-group"></div> -->
 <div id="kakao-profile"></div>
                 <div class="mbr-navbar__hamburger mbr-hamburger text-white"><span class="mbr-hamburger__line"></span></div>
                 <div class="mbr-navbar__column mbr-navbar__menu">
@@ -109,6 +109,10 @@
         ...
       </div>
       <div class="modal-footer">
+      	 <div style="align=center;">
+        	<fb:login-button show-faces="false" width="200" max-rows="1"></fb:login-button>
+        </div>
+        <div id="kakao-logged-group"></div>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
@@ -144,7 +148,7 @@
 
 <!-- Small modal -->
 </footer> 
-
+  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
   <script src="../js/main/jquery.min.js"></script>
   <script src="../js/main/bootstrap.min.js"></script>
   <script src="../js/main/SmoothScroll.js"></script>
@@ -154,6 +158,8 @@
   <script src="../js/main/gscript.js"></script>
   <script src="../js/main/masonry.pkgd.min.js"></script>
   <script src="../js/main/imagesloaded.pkgd.min.js"></script>
+  <script src="../js/main/kakaotalk.js"></script>
+  <script src="../js/main/facebook.js"></script>
   
   
   
