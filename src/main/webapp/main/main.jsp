@@ -114,6 +114,7 @@
         			<a href="#">페이스북</a>
         		</div>
         		<div class="col-sm-4" id="hnplogin"></div>
+        		 <div id="kakao-logged-group" style="cursor:pointer"></div>
         	</div>
         	
         </div>
