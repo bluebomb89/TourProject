@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="../css/main/gstyle.css">
   <link rel="stylesheet" href="../css/main/mbr-additional.css" type="text/css">
   <link rel="stylesheet" href="../css/main/text.css" type="text/css">
+  <link rel="stylesheet" href="../css/main/loginmodal.css" type="text/css">
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script type="text/javascript">
 	  jQuery(document).ready(function($) {
@@ -98,7 +99,49 @@
         </div>
     </div>
 </section>
+<!-- 모달 추가 -->
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" style="width: 500px;">
+    <div class="modal-content">
+       <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="font-size: 24px; color:#4A90E2">로그인</h4>
+      </div>
+      <div class="modal-body">
+        <div class=form-group>
+        	<div class=row>
+        		<div class=col-sm-4>
+        			<a href="#">페이스북</a>
+        		</div>
+        		<div class="col-sm-4" id="hnplogin"></div>
+        	</div>
+        	
+        </div>
+        <div class=form-group>
+        <div class=login-mi>
+        	<div class=login-label>
+        		또는
+        	</div>
+        	<div class=login-line></div>
+        </div>
+        </div>
+          <div class=login-text>
+          		<label>아이디</label>
+          		<input type="text" placeholder="이메일을입력하세요">
+          </div>
+          	<div class=login-text>
+          		<label>비밀번호</label>
+          		<input type="text" placeholder="비밀번호를입력하세요">
+          	</div>
+      </div>
+      <div class="modal-footer">
+        <input type="button" value="로그인">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
        <div class="modal-header">
@@ -118,7 +161,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <div id="fullpage">
 <div class="section" style="background-color: #edefed;">
