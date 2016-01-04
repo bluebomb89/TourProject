@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <!-- �����̴� ���� -->
 <div class="section">
 	<section
@@ -33,6 +34,23 @@
 					<div class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--bg-adapted item dark center mbr-section--full-height"
 						style="background-image: url(images/rain.jpg);">
 						<div class="mbr-box__magnet mbr-box__magnet--sm-padding">
+						<div id="textSlider" class="row">
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 iamCol">
+						<p>Eu</p>
+						<p>Sou</p>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 slideCol">
+						<div class="scroller">
+							<div class="inner">
+								<p>PriscilaCunha</p>
+								<p>Web Developer</p>
+								<p>Web Designer</p>
+								<p>Aprendiz Jedi</p>
+							</div>
+						</div>
+					</div>
+	
+				</div>
 							<div class=" container"></div>
 						</div>
 					</div>
