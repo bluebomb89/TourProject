@@ -42,10 +42,10 @@
 					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-8 slideCol">
 						<div class="scroller">
 							<div class="inner">
-								<p>PriscilaCunha</p>
-								<p>Web Developer</p>
-								<p>Web Designer</p>
-								<p>Aprendiz Jedi</p>
+								<p>정수빈(일산,28세)</p>
+								<p>휴</p>
+								<p>배고파</p>
+								<p>ㅇㅇㅇㅇㅇㅇㅇㅇ</p>
 							</div>
 						</div>
 					</div>
