@@ -109,7 +109,9 @@ createKakaotalkLogin();
               cookie     : true,          // 쿠키허용
               xfbml      : true           // parse XFBML
             });
-           
+            FB.Event.subscribe('auth.logout', function(response) {
+                document.location.reload();
+            });
             FB.getLoginStatus(function(response) {
                 if (response.status === 'connected') {
                     
@@ -146,10 +148,8 @@ createKakaotalkLogin();
            }(document));
         </script>
         
-        <p>로그인 버튼 추가</p>
         <fb:login-button show-faces="false" width="200" max-rows="1"></fb:login-button>
-        
-        <p>사용자정보 출력</p>
+        <a href="#" onclick="FB.logout();">[logout]</a><br>
         <div align="left">
             <img id="image"/>
             <div id="name"></div>
