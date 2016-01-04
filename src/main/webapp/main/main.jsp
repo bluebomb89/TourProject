@@ -67,8 +67,8 @@
                         	<ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active">
                         		<li class="mbr-navbar__item">
                         			<a class="mbr-buttons__link btn text-white"  href="main.do">HOME</a>
-                        		</li><li id="kakao-logged-group" class="mbr-navbar__item">
-                        			<!-- <a class="mbr-buttons__link btn text-white" data-toggle="modal" data-target=".bs-example-modal-lg">로그인</a> -->
+                        		</li><li class="mbr-navbar__item">
+                        			<a class="mbr-buttons__link btn text-white" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">로그인</a>
                         		</li>
                         		<li class="mbr-navbar__item">
                         			<a class="mbr-buttons__link btn text-white" href="http://mobirise.com">ABOUT</a>
@@ -112,8 +112,7 @@
       	 <div style="align=center;">
         	<fb:login-button show-faces="false" width="200" max-rows="1"></fb:login-button>
         </div>
-        <div id="hnplogin"></div>
-        <a class="kakao-login-btn">카카오 톡으로 로그인하기</a>
+        <div id="kakao-logged-group" style="cursor:pointer"></div>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
