@@ -7,6 +7,7 @@
 	<!-- <link rel="stylesheet" href="../css/vendor.css" type="text/css"> -->
 	<link rel="stylesheet" href="../css/member/head.css" type="text/css">
 	<link rel="stylesheet" href="../css/member/registration.css" type="text/css">
+	<link rel="stylesheet" href="../css/main/font.css" type="text/css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700&amp;subset=latin,cyrillic-ext,greek-ext,greek,latin-ext,cyrillic" media="all">
 	<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
 	<script type="text/javascript">

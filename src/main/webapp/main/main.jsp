@@ -35,6 +35,7 @@
 <section class="engine"><a rel="nofollow" href="http://mobirise.com">Mobirise website maker</a></section>
 <!-- 메뉴바 -->
 <section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--transparent mbr-navbar--sticky mbr-navbar--auto-collapse" id="menu-21">
+
     <div class="mbr-navbar__section mbr-section">
         <div class="mbr-section__container container">
             <div class="mbr-navbar__container">
@@ -50,7 +51,9 @@
                         <div class="mbr-navbar__column">
                         	<ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active">
                         		<li class="mbr-navbar__item">
-                        			<a class="mbr-buttons__link btn text-white" href="main.do">HOME</a>
+                        			<a class="mbr-buttons__link btn text-white"  href="main.do">HOME</a>
+                        		</li><li class="mbr-navbar__item">
+                        			<a class="mbr-buttons__link btn text-white" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">로그인</a>
                         		</li>
                         		<li class="mbr-navbar__item">
                         			<a class="mbr-buttons__link btn text-white" href="http://mobirise.com">ABOUT</a>
@@ -66,6 +69,7 @@
                         		</li>
                         	</ul>
                         </div>
+                        
                         <div class="mbr-navbar__column">
                         	<ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active">
                         		<li class="mbr-navbar__item">
@@ -79,8 +83,26 @@
         </div>
     </div>
 </section>
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+       <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="fullpage">
-<div class="section">
+<div class="section" style="background-color: #edefed;">
 <!-- 메인 인클루드 -->
 <jsp:include page="${mainview}"></jsp:include>
 </div>
@@ -103,6 +125,9 @@
             </div>
         </div>
     </div>
+
+
+<!-- Small modal -->
 </footer> 
 
   <script src="../js/main/jquery.min.js"></script>
