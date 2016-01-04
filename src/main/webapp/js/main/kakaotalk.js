@@ -13,9 +13,8 @@ console.log(error);
 });
 }
 function createKakaotalkLogin(){
-$("#hnplogin .kakao-logout-btn,#hnplogin .kakao-login-btn").remove();
+$("#kakao-logged-group .kakao-logout-btn,#kakao-logged-group .kakao-login-btn").remove();
 var loginBtn = $("<a/>",{"class":"kakao-login-btn","text":"카카오 톡으로 로그인하기"});
-var mainloginBtn = $("<a/>",{"class":"kakao-login-btn mbr-buttons__link btn text-white","text":"로그인","data-toggle":"modal","data-target":".bs-example-modal-lg"});
 loginBtn.click(function(){
 Kakao.Auth.login({
 persistAccessToken: true,
@@ -29,14 +28,13 @@ console.log(err);
 }
 });
 });
-$("#hnplogin").prepend(loginBtn)
-$("#kakao-logged-group").prepend(mainloginBtn)
+$("#kakao-logged-group").prepend(loginBtn)
 }
 function createKakaotalkLogout(){
 $("#kakao-logged-group .kakao-logout-btn,#kakao-logged-group .kakao-login-btn").remove();
-var logoutBtn = $("<a/>",{"class":"kakao-logout-btn mbr-buttons__link btn text-white","text":"로그아웃","data-toggle":"modal"});
+var logoutBtn = $("<a/>",{"class":"kakao-logout-btn","text":"로그아웃"});
 logoutBtn.click(function(){
-Kakao.Auth.logout(); 
+Kakao.Auth.logout();
 createKakaotalkLogin();
 $("#kakao-profile").text("");
 });
