@@ -144,7 +144,7 @@
                         			<a class="mbr-buttons__link btn text-white" href="http://mobirise.com">ABOUT</a>
                         		</li>
                         		<li class="mbr-navbar__item">
-                        			<a class="mbr-buttons__link btn text-white" href="http://mobirise.com">CONTACT</a>
+                        			<a class="mbr-buttons__link btn text-white" href="../detail/detail.do">CONTACT</a>
                         		</li>
          		                <li class="mbr-navbar__item">
                         			<a class="mbr-buttons__link btn text-white" href="http://mobirise.com">IMG</a>
@@ -157,9 +157,6 @@
                         
                         <div class="mbr-navbar__column">
                         	<ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active">
-                        		<li class="mbr-navbar__item">
-                        			<a class="mbr-buttons__btn btn btn-default" href="http://mobirise.com">DOWNLOAD</a>
-                        		</li>
                         	</ul>
                         </div>
                     </nav>
